@@ -1,0 +1,27 @@
+{
+  "name": "interno",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css",
+    "scss:autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers \"last 2 versions\" -r css/styles.css",
+    "watch": "sass --watch scss/styles.scss:css/styles.css",
+    "build": "npm run sass && npm run scss:autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadiminsk/interno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadiminsk/interno/issues"
+  },
+  "homepage": "https://github.com/vadiminsk/interno#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.3.3",
+    "node-sass": "^6.0.1",
+    "postcss-cli": "^8.3.1"
+  }
+}

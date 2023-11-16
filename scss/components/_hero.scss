@@ -1,0 +1,23 @@
+.hero {
+  padding: toRem(195) 0;
+  background-image: url("../images/hero-section.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    width: 50%;
+    h1 {
+      margin-bottom: toRem(20);
+    }
+    p {
+      margin-bottom: toRem(35);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__wrapper {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,125 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  html *,
+  body * {
+    box-sizing: inherit; }
+
+.section {
+  margin-bottom: 6.25rem; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+.button {
+  position: relative;
+  padding: 1.375rem 4.1875rem 1.375rem 2.125rem;
+  background: #292f36;
+  border: 2px solid #292f36;
+  border-radius: 18px;
+  font-size: 1.125rem;
+  letter-spacing: 0.72px;
+  color: #fff;
+  cursor: pointer; }
+  .button:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    transform: translateY(-50%);
+    width: 1.625rem;
+    height: 2.25rem;
+    background-image: url("../images/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.5;
+  letter-spacing: 0.22px;
+  color: #4d5053; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "DM Serif Display", serif;
+  color: #292f36; }
+
+h1 {
+  font-size: 5rem;
+  line-height: 1.2; }
+
+h2 {
+  font-size: 3.125rem;
+  line-height: 1.3; }
+
+h3 {
+  font-size: 1.5625rem;
+  line-height: 1.5; }
+
+.header {
+  padding: 1.625rem 0 1.125rem; }
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    @media (max-width: 768px) {
+      .header__wrapper {
+        flex-direction: column;
+        align-items: center; } }
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 77rem;
+  margin: 0 auto;
+  padding: 0 16px; }
+
+.header__nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; }
+  .header__nav ul li a {
+    font-size: 1.1875rem;
+    letter-spacing: 0.4px;
+    color: #292f36;
+    transition: color 0.3s linear; }
+    .header__nav ul li a:hover {
+      color: #cda274; }
+  .header__nav ul li:not(:last-child) {
+    margin-right: 2.5rem; }
+  @media (max-width: 768px) {
+    .header__nav ul {
+      justify-content: center; }
+      .header__nav ul li a {
+        font-size: 0.9375rem; }
+      .header__nav ul li:not(:last-child) {
+        margin-right: 0.625rem; } }
+
+.hero {
+  padding: 12.1875rem 0;
+  background-image: url("../images/hero-section.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
+  .hero__wrapper {
+    width: 50%; }
+    .hero__wrapper h1 {
+      margin-bottom: 1.25rem; }
+    .hero__wrapper p {
+      margin-bottom: 2.1875rem; }
+  @media (max-width: 768px) {
+    .hero__wrapper {
+      width: 100%; } }
+
+/*# sourceMappingURL=styles.css.map */

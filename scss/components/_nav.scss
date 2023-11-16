@@ -1,0 +1,40 @@
+.header {
+  &__nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+
+      li {
+        a {
+          font-size: toRem(19);
+          letter-spacing: 0.4px;
+          color: $titleColor;
+          transition: color 0.3s linear;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+
+        &:not(:last-child) {
+          margin-right: toRem(40);
+        }
+      }
+
+      @media (max-width: 768px) {
+        justify-content: center;
+
+        li {
+          a {
+            font-size: toRem(15);
+          }
+
+          &:not(:last-child) {
+            margin-right: toRem(10);
+          }
+        }
+      }
+    }
+  }
+}

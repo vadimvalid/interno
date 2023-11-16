@@ -1,0 +1,48 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  * {
+    box-sizing: inherit;
+  }
+}
+
+.section {
+  margin-bottom: $paddingTop100;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  position: relative;
+  padding: toRem(22) toRem(67) toRem(22) toRem(34);
+  background: $titleColor;
+  border: 2px solid $titleColor;
+  border-radius: 18px;
+  font-size: toRem(18);
+  letter-spacing: 0.72px;
+  color: $white;
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: toRem(20);
+    transform: translateY(-50%);
+    width: toRem(26);
+    height: toRem(36);
+    background-image: url("../images/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
